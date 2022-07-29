@@ -1,0 +1,1854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>849</width>
+    <height>582</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Calculation Specialist</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QMenu{
+background-color:   rgb(50, 50, 50);
+color: white;
+font-family: &quot;Georgia&quot;;
+font-weight: bold;
+font-size: 14px;
+}
+QMenu::item:disabled{
+background-color: rgb(147, 147, 147);
+color: rgb(90, 90, 90);
+}
+
+QMenu::item:disabled:selected{
+background-color:  rgb(147, 147, 147);
+}
+
+
+
+QMenu::item:selected  {
+background-color: rgb(198, 66, 0);
+}
+
+QMenu::separator {
+height: 0px;
+}
+
+#label{
+font-family: &quot;Georgia&quot;;
+font-weight: bold;
+font-size: 16px;
+color: rgb(232, 232, 232);
+border-color: rgb(0,0,0);
+}
+
+#LeftMenu{
+background-color:   rgb(50, 50, 50);
+border-right: 1px solid   rgba(198, 66, 0,100);
+}
+
+#MainBody{
+background-color:   rgb(50, 50, 50);
+}
+
+#CalculatorButton:hover{
+background-color:   rgb(198, 66, 0);
+}
+
+
+#CalculatorButton{
+background-color:   rgb(198, 66, 0);
+padding:10px  5px;
+text-align: left;
+border-top-left-radius:20px;
+font-family: &quot;Georgia&quot;;
+font-weight: bold;
+font-size: 14px;
+color: rgb(232, 232, 232);
+}
+
+#SettingsButton{
+background-color:    rgb(50, 50, 50);
+padding:10px  5px;
+text-align: left;
+border-top-left-radius:20px;
+font-family: &quot;Georgia&quot;;
+font-weight: bold;
+font-size: 14px;
+color: rgb(232, 232, 232);
+}
+
+#SettingsButton:hover{
+background-color:   rgb(198, 66, 0);
+}
+
+
+
+
+#LobbyButton:hover{
+background-color:   rgba(255, 85, 0,70);
+}
+
+#LobbyButton{
+background-color:    rgb(50, 50, 50);
+padding:10px  5px;
+text-align: left;
+border-top-left-radius:20px;
+font-family: &quot;Georgia&quot;;
+font-weight: bold;
+font-size: 14px;
+color: rgb(232, 232, 232);
+}
+
+#TheoryButton:hover{
+background-color:   rgba(255, 85, 0,70);
+}
+
+#TheoryButton{
+background-color:   rgb(50, 50, 50);
+padding:10px  5px;
+text-align: left;
+border-top-left-radius:20px;
+font-family: &quot;Georgia&quot;;
+font-weight: bold;
+font-size: 14px;
+color: rgb(232, 232, 232);
+}
+
+#MainMenuButton{
+background-color:   rgb(50, 50, 50);
+border: none;
+image: url(:/Icons/Icons/MenuClose.svg);
+}
+
+#OpenClsButtonMNewtona{
+background-color:   rgb(50, 50, 50);
+text-align: left;
+font-family: &quot;Georgia&quot;;
+font-weight: bold;
+font-size: 14px;
+color: rgb(232, 232, 232);
+border: none ;
+border-bottom: 1px solid rgb(255, 85, 0) ;
+icon: url(:/Icons/Icons/OpenCloseImage.svg);
+}
+
+#OpenClsButtonMNewtona:hover{
+color: rgba(232, 232, 232,100);
+border-bottom-color: rgba(255, 85, 0,100) ;
+icon: url(:/Icons/Icons/OpenCloseImage_Hover.svg);
+}
+
+#OpenClsButtonMZeidela{
+background-color:   rgb(50, 50, 50);
+text-align: left;
+font-family: &quot;Georgia&quot;;
+font-weight: bold;
+font-size: 14px;
+color: rgb(232, 232, 232);
+border: none ;
+border-bottom: 1px solid rgb(255, 85, 0) ;
+icon: url(:/Icons/Icons/OpenCloseImage.svg);
+}
+
+#OpenClsButtonMZeidela:hover{
+color: rgba(232, 232, 232,100);
+border-bottom-color: rgba(255, 85, 0,100) ;
+icon: url(:/Icons/Icons/OpenCloseImage_Hover.svg);
+}
+
+#OpenClsButtonMItaration{
+background-color:   rgb(50, 50, 50);
+text-align: left;
+font-family: &quot;Georgia&quot;;
+font-weight: bold;
+font-size: 14px;
+color: rgb(232, 232, 232);
+border: none ;
+border-bottom: 1px solid rgb(255, 85, 0) ;
+icon: url(:/Icons/Icons/OpenCloseImage.svg);
+}
+
+#OpenClsButtonMItaration:hover{
+color: rgba(232, 232, 232,100);
+border-bottom-color: rgba(255, 85, 0,100) ;
+icon: url(:/Icons/Icons/OpenCloseImage_Hover.svg);
+}
+
+
+#OpenClsButtonMBroyden{
+background-color:   rgb(50, 50, 50);
+text-align: left;
+font-family: &quot;Georgia&quot;;
+font-weight: bold;
+font-size: 14px;
+color: rgb(232, 232, 232);
+border: none ;
+border-bottom: 1px solid rgb(255, 85, 0) ;
+icon: url(:/Icons/Icons/OpenCloseImage.svg);
+}
+
+#OpenClsButtonMBroyden:hover{
+color: rgba(232, 232, 232,100);
+border-bottom-color: rgba(255, 85, 0,100) ;
+icon: url(:/Icons/Icons/OpenCloseImage_Hover.svg);
+}
+
+
+
+
+#CreateLobbyButton{
+background-color:   rgb(50, 50, 50);
+color: rgb(232, 232, 232);
+font-family: &quot;Georgia&quot;;
+font-weight: bold;
+font-size: 14px;
+}
+#CreatePackButton{
+background-color:   rgb(50, 50, 50);
+color: rgb(232, 232, 232);
+font-family: &quot;Georgia&quot;;
+font-weight: bold;
+font-size: 14px;
+}
+#SignInLobbyButton{
+background-color:   rgb(50, 50, 50);
+color: rgb(232, 232, 232);
+font-family: &quot;Georgia&quot;;
+font-weight: bold;
+font-size: 14px;
+}
+
+#ShowResultButton{
+background-color:  rgb(62, 62, 62);
+border-radius:8px;
+font-family: &quot;Georgia&quot;;
+font-weight: bold;
+font-size: 16px;
+padding: 8px 8px;
+color: rgb(232, 232, 232);
+text-align:center;
+}
+
+#ShowResultButton:hover{
+background-color:  rgba(198, 66, 0,140);
+}
+
+/* QComboBox edit */
+QComboBox{
+border: 1px solid rgba(198, 66, 0,140);
+background-color: rgb(50, 50, 50);
+border-radius: 4px;
+padding: 2px;
+color:white;
+font-family: &quot;Georgia&quot;;
+font-size: 12px;
+}
+
+
+QComboBox::drop-down{
+border:0px;
+}
+
+QComboBox::down-arrow{
+image: url(:/Icons/Icons/ComboBoxArrowDown.svg);
+width:12px;
+height:12px;
+margin-right:15px;
+}
+
+QComboBox:on{
+border: 4px solid  rgba(198, 66, 0,140);;
+}
+
+QComboBox QListView{
+font-size:12px;
+border: 1px solid rgba(0,0,0,10%);
+padding:5px;
+background-color: rgb(60, 60, 60);
+outline:0px;
+color: white;
+font-family: &quot;Georgia&quot;;
+font-size: 12px;
+}
+
+QComboBox QListView::item{
+padding-left: 10px;
+background-color: rgb(60, 60, 60);
+color: white;
+}
+
+QComboBox QListView::item:hover{
+background-color: #1e90ff;
+}
+
+QComboBox QListView::item:selected{
+background-color: #1e90ff;
+}
+
+/* End QComboBox edit */
+
+QSpinBox{
+border: 1px solid rgba(198, 66, 0,140);
+background-color: rgb(50, 50, 50);
+border-radius: 4px;
+padding: 1px;
+color:white;
+}
+
+QSpinBox::down-arrow{
+image: url(:/Icons/Icons/ComboBoxArrowDown.svg);
+width:14px;
+height:14px;
+}
+
+QSpinBox::down-button {
+width: 14px;
+border-width: 1px;
+border-top-width: 0;
+}
+
+QSpinBox::up-button {
+width: 14px;
+border-width: 1px;
+border-top-width: 0;
+}
+
+QSpinBox::up-arrow{
+image: url(:/Icons/Icons/ComboBoxArrowDownOn.svg);
+width:14px;
+height:14px;
+}
+
+
+QLineEdit{
+background-color: rgb(50, 50, 50);
+border:none;
+border-bottom: 2px solid  rgba(198, 66, 0,100);
+font-family: &quot;Georgia&quot;;
+font-size: 14px;
+color: rgb(232, 232, 232);
+}</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="LeftMenu" native="true">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>201</width>
+        <height>1000</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item alignment="Qt::AlignLeft|Qt::AlignTop">
+           <widget class="QFrame" name="frame_2">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="font">
+                <font>
+                 <family>Georgia</family>
+                 <pointsize>-1</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Calculation Specialist</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item alignment="Qt::AlignTop">
+              <widget class="QFrame" name="frame_4">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <property name="spacing">
+                 <number>4</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="CalculatorButton">
+                  <property name="text">
+                   <string>Calculator</string>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>24</width>
+                    <height>24</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="TheoryButton">
+                  <property name="text">
+                   <string>Theory</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="LobbyButton">
+                  <property name="text">
+                   <string>Lobby</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignBottom">
+              <widget class="QFrame" name="frame_7">
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_16">
+                <property name="spacing">
+                 <number>4</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="SettingsButton">
+                  <property name="text">
+                   <string>Settings</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="MainBody" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QWidget" name="MainHeaderWidget" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>32</height>
+          </size>
+         </property>
+         <widget class="QPushButton" name="MainMenuButton">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>31</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>24</width>
+            <height>24</height>
+           </size>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignTop">
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777213</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="Page1">
+          <property name="styleSheet">
+           <string notr="true">QLabel{
+font-family: &quot;Georgia&quot;;
+font-weight: bold;
+font-size: 13px;
+color: rgb(232, 232, 232);
+border-color: rgb(0,0,0);
+}</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+            <widget class="QWidget" name="HeaderCalcualtorWidget" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>120</height>
+              </size>
+             </property>
+             <layout class="QGridLayout" name="gridLayout">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="horizontalSpacing">
+               <number>8</number>
+              </property>
+              <property name="verticalSpacing">
+               <number>5</number>
+              </property>
+              <item row="1" column="2">
+               <widget class="QSpinBox" name="SpinUknownBox">
+                <property name="minimum">
+                 <number>2</number>
+                </property>
+                <property name="maximum">
+                 <number>5</number>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QComboBox" name="MethodsBox">
+                <item>
+                 <property name="text">
+                  <string>Newton Method</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Broyden Method</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Seidel method</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Method simple iteration</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_3">
+                <property name="text">
+                 <string>Accuracy</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>System solution method</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLabel" name="label_5">
+                <property name="text">
+                 <string>Number of unknowns</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLineEdit" name="AccuracyLine">
+                <property name="text">
+                 <string>0.0001</string>
+                </property>
+                <property name="maxLength">
+                 <number>8</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="CalculatorWidget" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_13">
+              <item alignment="Qt::AlignHCenter">
+               <widget class="QWidget" name="HeadetCalculateWidget" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <layout class="QVBoxLayout" name="HeaderEquationLayou">
+                   <item>
+                    <widget class="QLabel" name="label_6">
+                     <property name="text">
+                      <string>Enter the system of equations</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_2">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeType">
+                    <enum>QSizePolicy::Fixed</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>120</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="HeaderAccuracyLayout">
+                   <item>
+                    <widget class="QLabel" name="label_4">
+                     <property name="text">
+                      <string>Enter the initial approximation</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="CalculatorBodyWidget" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_4">
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QFrame" name="frame_5">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_19">
+                    <item>
+                     <layout class="QFormLayout" name="EquationLayout"/>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignHCenter">
+                  <widget class="QFrame" name="frame_6">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_20">
+                    <item>
+                     <layout class="QFormLayout" name="ApproximationLayout">
+                      <property name="sizeConstraint">
+                       <enum>QLayout::SetDefaultConstraint</enum>
+                      </property>
+                      <property name="formAlignment">
+                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                      </property>
+                      <property name="horizontalSpacing">
+                       <number>6</number>
+                      </property>
+                      <property name="verticalSpacing">
+                       <number>6</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                     </layout>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignHCenter">
+               <widget class="QWidget" name="CalculatorSearchSolutionWidget" native="true">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_14">
+                 <item>
+                  <widget class="QPushButton" name="ShowResultButton">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>60</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>Show solutions</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="ResultCalculatorWidget" native="true">
+             <property name="styleSheet">
+              <string notr="true">QScrollBar:vertical{
+border: none;
+background-color: rgb(50,50,50);
+width:14px;
+margin:14px 0 14px 0;
+border-radius:0px;
+}
+
+QScrollBar::handle:vertical{
+background-color: rgb(198, 66, 0);
+min-height: 30px;
+border-radius: 7px;
+}
+
+
+QScrollBar::handle:vertical:hover{
+background-color: rgba(198, 66, 0,60%);
+}
+
+
+/* Button top */
+QScrollBar::sub-line:vertical{
+border:none;
+background-color: rgb(50,50,50);
+height:15px;
+border-top-left-radius: 7px;
+border-top-right-radius: 7px;
+subcontrol-position:top;
+subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical:hover{
+background-color: rgba(198, 66, 0,40%);
+}
+
+QScrollBar::sub-line:vertical:pressed{
+background-color: rgb(185,0,92);
+}
+
+/* Button bot */
+
+QScrollBar::add-line:vertical{
+border:none;
+background-color: rgb(50,50,50);
+height:15px;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 7px;
+subcontrol-position: b	ottom;
+subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical:hover{
+background-color: rgba(198, 66, 0,60%);
+}
+
+QScrollBar::add-line:vertical:pressed{
+background-color: rgba(185,0,92);
+}
+
+/*Reset arrow*/
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical{
+background:none;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical{
+background:none;
+}
+
+
+
+
+
+</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_15">
+              <item>
+               <widget class="QScrollArea" name="scrollArea">
+                <property name="maximumSize">
+                 <size>
+                  <width>100000</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color:  rgb(50, 50, 50);
+border:none;</string>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAsNeeded</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOff</enum>
+                </property>
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>596</width>
+                   <height>229</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_17">
+                  <item>
+                   <widget class="QLabel" name="ResultStrLabel">
+                    <property name="maximumSize">
+                     <size>
+                      <width>100000</width>
+                      <height>100000</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QCustomPlot" name="GraphicsWidget" native="true">
+                    <property name="minimumSize">
+                     <size>
+                      <width>240</width>
+                      <height>140</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item alignment="Qt::AlignHCenter">
+                   <widget class="QLabel" name="NameGraphLabel">
+                    <property name="text">
+                     <string>Picture 1 - Graph of result points</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="Page2">
+          <property name="styleSheet">
+           <string notr="true">QScrollArea{
+border:none;
+}
+QScrollBar:vertical{
+border: none;
+background-color: rgb(50,50,50);
+width:14px;
+margin:14px 0 14px 0;
+border-radius:0px;
+}
+
+QScrollBar::handle:vertical{
+background-color: rgb(198, 66, 0);
+min-height: 30px;
+border-radius: 7px;
+}
+
+
+QScrollBar::handle:vertical:hover{
+background-color: rgba(198, 66, 0,60%);
+}
+
+
+/* Button top */
+QScrollBar::sub-line:vertical{
+border:none;
+background-color: rgb(50,50,50);
+height:15px;
+border-top-left-radius: 7px;
+border-top-right-radius: 7px;
+subcontrol-position:top;
+subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical:hover{
+background-color: rgba(198, 66, 0,40%);
+}
+
+QScrollBar::sub-line:vertical:pressed{
+background-color: rgb(185,0,92);
+}
+
+/* Button bot */
+
+QScrollBar::add-line:vertical{
+border:none;
+background-color: rgb(50,50,50);
+height:15px;
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 7px;
+subcontrol-position: b	ottom;
+subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical:hover{
+background-color: rgba(198, 66, 0,60%);
+}
+
+QScrollBar::add-line:vertical:pressed{
+background-color: rgba(185,0,92);
+}
+
+/*Reset arrow*/
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical{
+background:none;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical{
+background:none;
+}
+</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QWidget" name="MNewtonaWidget" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_11">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QPushButton" name="OpenClsButtonMNewtona">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>290</width>
+                  <height>24</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>Theory for method Nweton</string>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>24</width>
+                  <height>24</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QScrollArea" name="NwetonArea">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>614</width>
+                   <height>72</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(50, 50, 50);
+color: rgb(232, 232, 232);</string>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_23">
+                  <item>
+                   <widget class="QLabel" name="TextMNewtona">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">#TextMNewtona{
+color: rgb(255, 255, 255);
+}
+
+</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="MItarationWidget" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QPushButton" name="OpenClsButtonMItaration">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>24</height>
+                 </size>
+                </property>
+                <property name="layoutDirection">
+                 <enum>Qt::LeftToRight</enum>
+                </property>
+                <property name="text">
+                 <string>Theory for method simple iteration</string>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>24</width>
+                  <height>24</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QScrollArea" name="IterationArea">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAsNeeded</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOff</enum>
+                </property>
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>614</width>
+                   <height>72</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(50, 50, 50);
+color: rgb(232, 232, 232);</string>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_22">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="TextMIteration">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="MZeidela" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_12">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QPushButton" name="OpenClsButtonMZeidela">
+                <property name="minimumSize">
+                 <size>
+                  <width>290</width>
+                  <height>24</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Theory for method Seidela</string>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>24</width>
+                  <height>24</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QScrollArea" name="SeidelArea">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents_4">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>614</width>
+                   <height>72</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(50, 50, 50);
+color: rgb(232, 232, 232);</string>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_24">
+                  <item>
+                   <widget class="QLabel" name="TextMZeidela">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="MBroydenaWidget" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_18">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QPushButton" name="OpenClsButtonMBroyden">
+                <property name="minimumSize">
+                 <size>
+                  <width>290</width>
+                  <height>24</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Theory for method Broyden</string>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>24</width>
+                  <height>24</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QScrollArea" name="BroydenArea">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents_5">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>614</width>
+                   <height>72</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(50, 50, 50);
+color: rgb(232, 232, 232);</string>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_25">
+                  <item>
+                   <widget class="QLabel" name="TextMBroyden">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item alignment="Qt::AlignRight|Qt::AlignBottom">
+            <widget class="QWidget" name="PrintTheoryWidget" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_21">
+              <item>
+               <widget class="QPushButton" name="PrintButton">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>36</width>
+                  <height>36</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">#PrintButton{
+border:none;
+background-color: rgb(50, 50, 50);
+icon:  url(:/Icons/Icons/SaveDocFile.svg);
+}
+
+
+#PrintButton:hover{
+icon:  url(:/Icons/Icons/SaveDocFile_Hover.svg);
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>36</width>
+                  <height>36</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="Page3">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+background-color:  rgb(62, 62, 62);
+border-radius:8px;
+font-family: &quot;Georgia&quot;;
+font-weight: bold;
+font-size: 16px;
+border:none;
+color: rgb(232, 232, 232);
+text-align:center;
+}
+
+QPushButton:hover{
+background-color:  rgba(198, 66, 0,140);
+}</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+            <widget class="QWidget" name="widget" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <property name="spacing">
+               <number>8</number>
+              </property>
+              <item>
+               <widget class="QPushButton" name="CreateLobbyButton">
+                <property name="minimumSize">
+                 <size>
+                  <width>240</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="locale">
+                 <locale language="English" country="UnitedStates"/>
+                </property>
+                <property name="text">
+                 <string>Create lobby</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="SignInLobbyButton">
+                <property name="minimumSize">
+                 <size>
+                  <width>240</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="locale">
+                 <locale language="English" country="UnitedStates"/>
+                </property>
+                <property name="text">
+                 <string>Sign in lobby</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="CreatePackButton">
+                <property name="minimumSize">
+                 <size>
+                  <width>240</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="locale">
+                 <locale language="English" country="UnitedStates"/>
+                </property>
+                <property name="text">
+                 <string>Create pack</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="Page4">
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+background-color:  rgb(62, 62, 62);
+border-radius:8px;
+font-family: &quot;Georgia&quot;;
+font-weight: bold;
+font-size: 16px;
+border:none;
+color: rgb(232, 232, 232);
+text-align:center;
+}
+
+QPushButton:hover{
+background-color:  rgba(198, 66, 0,140);
+}
+
+QLabel{
+text-align: center;
+font-family: &quot;Georgia&quot;;
+font-weight: bold;
+font-size: 14px;
+color: rgb(232, 232, 232);
+}</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QWidget" name="widget_3" native="true">
+             <property name="maximumSize">
+              <size>
+               <width>300</width>
+               <height>160</height>
+              </size>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QWidget" name="widget_2" native="true">
+                <layout class="QFormLayout" name="formLayout">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_7">
+                   <property name="text">
+                    <string>Select language</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QComboBox" name="comboBox">
+                   <property name="minimumSize">
+                    <size>
+                     <width>120</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>English</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Ukraine</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="1" column="0" colspan="2">
+                  <widget class="QPushButton" name="AboutProgramButt">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>About program</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0" colspan="2">
+                  <widget class="QPushButton" name="HelpButt">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>Help</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(51, 51, 51);</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>Graph/qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

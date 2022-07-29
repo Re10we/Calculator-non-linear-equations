@@ -1,0 +1,54 @@
+<RCC>
+    <qresource prefix="/Icons">
+        <file>Icons/MenuClose.svg</file>
+        <file>Icons/MenuOpened.svg</file>
+        <file>Icons/OpenCloseImage.svg</file>
+        <file>Icons/OpenCloseImage_Hover.svg</file>
+        <file>Icons/OpenCloseImageOn.svg</file>
+        <file>Icons/OpenCloseImageOn_Hover.svg</file>
+        <file>Icons/ComboBoxArrowDown.svg</file>
+        <file>Icons/ComboBoxArrowDownOn.svg</file>
+        <file>Icons/PodPivasPNG.jpg</file>
+        <file>Icons/SaveDocFile.svg</file>
+        <file>Icons/SaveDocFile_Hover.svg</file>
+    </qresource>
+    <qresource prefix="/Lobby">
+        <file>Icons/BackPageLobby.svg</file>
+        <file>Icons/BackPageLobby_Hover.svg</file>
+        <file>Icons/ChatIcon.svg</file>
+        <file>Icons/ChatIcon_Hover.svg</file>
+        <file>Icons/ListUser.svg</file>
+        <file>Icons/ListUser_Hover.svg</file>
+        <file>Icons/MessageSendIcon.svg</file>
+        <file>Icons/NextPageLobby.svg</file>
+        <file>Icons/NextPageLobby_Hover.svg</file>
+        <file>Icons/InstallPackIcon.svg</file>
+        <file>Icons/InstallPackIcon_Hover.svg</file>
+        <file>Icons/MessageSendIcon_Hover.svg</file>
+        <file>Icons/BigCurlyBrace.svg</file>
+        <file>Icons/StartTest.svg</file>
+        <file>Icons/StartTest_Hover.svg</file>
+        <file>Icons/StopServer.svg</file>
+        <file>Icons/StopServer_Hover.svg</file>
+    </qresource>
+    <qresource prefix="/Translate">
+        <file>QtLanguage_ukr.qm</file>
+    </qresource>
+    <qresource prefix="/helpPicture">
+        <file>Icons/HelpImage/Accuracy_picture1.svg</file>
+        <file>Icons/HelpImage/ExampleSystemOfEquations.svg</file>
+        <file>Icons/HelpImage/InitialValues.svg</file>
+        <file>Icons/HelpImage/MethodSolutionSystem.svg</file>
+        <file>Icons/HelpImage/NumberOfUknows.svg</file>
+        <file>Icons/HelpImage/SystemOfEquations.svg</file>
+        <file>Icons/HelpImage/AutorizationExample.svg</file>
+        <file>Icons/HelpImage/CreatePackExample.png</file>
+    </qresource>
+    <qresource prefix="/TheoryPicture">
+        <file>Icons/Theory/Simple iterations/Picture1.png</file>
+        <file>Icons/Theory/Simple iterations/Picture2.png</file>
+    </qresource>
+    <qresource prefix="/splashScreen">
+        <file>Icons/SplashScreen/SplashScreen.svg</file>
+    </qresource>
+</RCC>
