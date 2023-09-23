@@ -1,11 +1,10 @@
-#include "Interfaces/dialogclients.h"
-#include "ui_dialogclients.h"
+#include "dialogclients.h"
+#include "../ui_dialogclients.h"
 
 DialogClients::DialogClients(QWidget *parent,bool isCreateLobby) :
     QDialog(parent),
     ui(new Ui::DialogClients)
 {
-    winDark::setDark_Titlebar(reinterpret_cast<HWND>(winId()));
     ui->setupUi(this);
     if(isCreateLobby){
         ui->label_3->setVisible(false);

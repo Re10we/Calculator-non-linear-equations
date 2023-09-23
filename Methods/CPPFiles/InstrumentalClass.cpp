@@ -1,4 +1,5 @@
-#include "Methods/HFiles/InstrumentalClass.h"
+#include "../HFiles/InstrumentalClass.h"
+#include <climits>
 
 std::string InstrumentalClass::replaceUknownToValue(std::string MainStr, int countUknown, double* value){
 	for(uint8_t i=0;i<countUknown;i++){

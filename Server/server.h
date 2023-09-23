@@ -1,14 +1,14 @@
 #ifndef SERVER_H
 #define SERVER_H
-#include <QTcpServer>
-#include <QTcpSocket>
-#include <QPair>
-#include <QJsonObject>
-#include <QJsonParseError>
-#include <QJsonArray>
-#include <QFile>
-#include "Methods/HFiles/MNewtona.h"
-#include "Methods/HFiles/Methods.h"
+#include <QtNetwork/QTcpServer>
+#include <QtNetwork/QTcpSocket>
+#include <QtCore/QPair>
+#include <QtCore/QJsonObject>
+#include <QtCore/QJsonParseError>
+#include <QtCore/QJsonArray>
+#include <QtCore/QFile>
+#include "../Methods/HFiles/MNewtona.h"
+#include "../Methods/HFiles/Methods.h"
 
 class Server: public QTcpServer{
 

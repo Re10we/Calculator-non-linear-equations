@@ -3,9 +3,9 @@
 
 
 #include <string>
-#include "Methods/HFiles/Methods.h"
-#include "Derivative/expression.h"
-#include "Derivative/parser.h"
+#include "Methods.h"
+#include "../../Derivative/expression.h"
+#include "../../Derivative/parser.h"
 
 
 class MBroyden: public Methods{

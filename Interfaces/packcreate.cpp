@@ -1,11 +1,10 @@
 #include "packcreate.h"
-#include "ui_packcreate.h"
+#include "../ui_packcreate.h"
 
 PackCreate::PackCreate(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::PackCreate)
 {
-    winDark::setDark_Titlebar(reinterpret_cast<HWND>(winId()));
     ui->setupUi(this);
 
     QLocale lo(QLocale::C);

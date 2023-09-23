@@ -1,4 +1,4 @@
-#include "Methods/HFiles/MIteration.h"
+#include "../HFiles/MIteration.h"
 
 double* MIteration::solve(){
 	double* result = new double[Equation.size()];

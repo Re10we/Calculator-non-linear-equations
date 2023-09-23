@@ -3,7 +3,7 @@
 
 
 #include <string>
-#include "Methods/HFiles/Methods.h"
+#include "Methods.h"
 
 
 class MIteration: public Methods{

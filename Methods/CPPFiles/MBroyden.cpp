@@ -1,4 +1,4 @@
-#include "Methods/HFiles/MBroyden.h"
+#include "../HFiles/MBroyden.h"
 
 double* MBroyden::solve(){
   std::string** JacobyMatrix = buildJacobianMatrix();

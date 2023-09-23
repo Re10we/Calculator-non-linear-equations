@@ -22,14 +22,14 @@
 #ifndef __EV3EXPRESSIONH__
 #define __EV3EXPRESSIONH__
 
-#include <iostream>
-#include <vector>
-#include <map>
-
 #include "common.h"
 #include "tree.h"
 #include "exceptions.h"
 #include "operand.h"
+
+#include <iostream>
+#include <vector>
+#include <map>
 
 namespace Ev3
 {

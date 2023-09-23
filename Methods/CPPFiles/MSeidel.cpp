@@ -1,4 +1,4 @@
-#include "Methods/HFiles/MSeidel.h"
+#include "../HFiles/MSeidel.h"
 
 double* MSeidel::solve(){
     double* oldValue = new double[Equation.size()];

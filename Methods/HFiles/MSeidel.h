@@ -2,7 +2,7 @@
 #define MSEIDEL_H
 
 
-#include "Methods/HFiles/Methods.h"
+#include "Methods.h"
 
 class MSeidel: public Methods{
 public:

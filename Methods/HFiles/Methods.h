@@ -4,11 +4,11 @@
 #include <vector>
 #include <string>
 #include <math.h>
-#include "Parser/SimpleParser.h"
-#include "Methods/HFiles/InstrumentalClass.h"
+#include "../../Parser/SimpleParser.h"
+#include "InstrumentalClass.h"
 #include <algorithm>
 #include <float.h>
-#include <QVector>
+#include <QtCore/QVector>
 
 
 class Methods{

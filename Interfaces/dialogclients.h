@@ -1,8 +1,7 @@
 #ifndef DIALOGCLIENTS_H
 #define DIALOGCLIENTS_H
 
-#include <QDialog>
-#include "WinDark/winDark.h"
+#include <QtWidgets/QDialog>
 
 namespace Ui {
 class DialogClients;

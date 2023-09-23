@@ -3,7 +3,7 @@
 
 
 #include <string>
-#include "Parser/SimpleParser.h"
+#include "../../Parser/SimpleParser.h"
 
 class InstrumentalClass{
 public:

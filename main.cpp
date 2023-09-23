@@ -1,10 +1,8 @@
 #include "Interfaces/mainwindow.h"
-
-#include <QApplication>
-#include "WinDark/winDark.h"
-#include <QSplashScreen>
-#include <QStyle>
-#include <QScreen>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QSplashScreen>
+#include <QtWidgets/QStyle>
+#include <QtGui/QScreen>
 
 int main(int argc, char *argv[])
 {

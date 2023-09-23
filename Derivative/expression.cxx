@@ -19,16 +19,17 @@
  *
  */
 
-#include <string>
+
+#ifdef _MSC_VER
+#include <boost/math/special_functions.hpp>
+#endif
+
 #include <sstream>
 #include <cmath>
 #include <algorithm>
 #include <cassert>
 #include <iomanip>
-
-#ifdef _MSC_VER
-#include <boost/math/special_functions.hpp>
-#endif
+#include <string>
 
 #include "expression.h"
 

@@ -1,0 +1,91 @@
+rule ui
+ command = uic $in -o $out
+
+rule rcc
+ command = rcc $in -o $out
+
+rule moc
+ command = moc $in -o $out
+
+rule cxx
+ command = g++ -c $in -o $out
+
+rule link
+ command = g++ -lQt6Core -lQt6OpenGL -lQt6Network -lQt6Widgets -lQt6Gui -lQt6PrintSupport  $in -o $out && ninja -t clean -r ui rcc moc cxx
+
+#Clean with ninja build system
+#command: ninja -t clean 
+
+#Compile .ui files with user interface compiler(uic) from Qt
+build ui_helpwindow.h: ui helpwindow.ui
+build ui_aboutprogram.h: ui aboutprogram.ui
+build ui_dialogclients.h: ui dialogclients.ui
+build ui_lobbywindow.h: ui lobbywindow.ui
+build ui_mainwindow.h: ui mainwindow.ui
+build ui_packcreate.h: ui packcreate.ui
+
+#Compile image files with resource compiler(rcc) from Qt
+build  qrc_Icons.cpp: rcc Icons.qrc
+
+#Compile with moc
+build moc_dialogclients.cpp: moc Interfaces/dialogclients.h
+build moc_lobbywindow.cpp: moc Interfaces/lobbywindow.h
+build moc_mainwindow.cpp: moc Interfaces/mainwindow.h
+build moc_qcustomplot.cpp: moc Graph/qcustomplot.h
+build moc_server.cpp: moc Server/server.h
+
+#Compile
+build main.o: cxx main.cpp
+build expression.o: cxx Derivative/expression.cxx
+build operand.o: cxx Derivative/operand.cxx
+build parser.o: cxx Derivative/parser.cxx
+build SimpleParser.o: cxx Parser/SimpleParser.cpp
+build InstrumentalClass.o: cxx Methods/CPPFiles/InstrumentalClass.cpp 
+build MBroyden.o: cxx Methods/CPPFiles/MBroyden.cpp
+build MIteration.o: cxx Methods/CPPFiles/MIteration.cpp
+build MNewtona.o: cxx Methods/CPPFiles/MNewtona.cpp
+build MSeidel.o: cxx Methods/CPPFiles/MSeidel.cpp
+build dialogclients.o: cxx Interfaces/dialogclients.cpp
+build lobbywindow.o: cxx Interfaces/lobbywindow.cpp
+build mainwindow.o: cxx Interfaces/mainwindow.cpp
+build aboutprogram.o: cxx Interfaces/aboutprogram.cpp
+build helpwindow.o: cxx Interfaces/helpwindow.cpp
+build packcreate.o: cxx Interfaces/packcreate.cpp
+build server.o: cxx Server/server.cpp
+build qcustomplot.o: cxx Graph/qcustomplot.cpp
+build qrc_Icons.o: cxx qrc_Icons.cpp
+build moc_dialogclients.o: cxx moc_dialogclients.cpp
+build moc_lobbywindow.o: cxx moc_lobbywindow.cpp
+build moc_mainwindow.o: cxx moc_mainwindow.cpp
+build moc_qcustomplot.o: cxx moc_qcustomplot.cpp
+build moc_server.o: cxx moc_server.cpp
+
+#Build
+build res: link expression.o $
+ operand.o $
+ parser.o $
+ InstrumentalClass.o $
+ MBroyden.o $
+ MIteration.o $
+ MNewtona.o $
+ MSeidel.o $
+ SimpleParser.o $
+ dialogclients.o $
+ lobbywindow.o $
+ mainwindow.o $
+ server.o $
+ aboutprogram.o $
+ helpwindow.o $
+ main.o $
+ qcustomplot.o $
+ packcreate.o $
+ qrc_Icons.o $
+ moc_dialogclients.o $
+ moc_lobbywindow.o $
+ moc_mainwindow.o $
+ moc_qcustomplot.o $
+ moc_server.o 
+
+
+
+

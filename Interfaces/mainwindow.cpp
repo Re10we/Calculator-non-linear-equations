@@ -1,12 +1,10 @@
-#include "Interfaces/mainwindow.h"
-#include "ui_mainwindow.h"
-#include "WinDark/winDark.h"
+#include "mainwindow.h"
+#include "../ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
-    winDark::setDark_Titlebar(reinterpret_cast<HWND>(winId()));
     ui->setupUi(this);
     ui->LeftMenu->setMaximumWidth(0);
     ClickPanel = false;
@@ -279,8 +277,8 @@ void MainWindow::on_OpenClsButtonMBroyden_clicked()
 
 
 void MainWindow::ChangeEquationLayot(){
-    byte NumericStrEquation = ui->SpinUknownBox->value();
-    for(byte i=0;i<NumericStrEquation;i++){
+    int NumericStrEquation = ui->SpinUknownBox->value();
+    for(int i=0;i<NumericStrEquation;i++){
         QLineEdit *line = new QLineEdit();
         QLineEdit *Approxline = new QLineEdit();
         Approxline->setMaximumWidth(80);
@@ -290,7 +288,7 @@ void MainWindow::ChangeEquationLayot(){
         ArrLineEdit->push_back(line);
         ArrApproximationEdit->push_back(Approxline);
     }
-    for(byte i=0;i<NumericStrEquation;i++){
+    for(int i=0;i<NumericStrEquation;i++){
         QLabel * label = new   QLabel();
         QLabel* ApproxLabel = new QLabel();
         label->setText("x"+QString().number(i+1)+" " +"=");

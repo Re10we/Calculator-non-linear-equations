@@ -1,4 +1,4 @@
-#include "Methods/HFiles/MNewtona.h"
+#include "../HFiles/MNewtona.h"
 
 double* MNewtona::solve(){
     std::string** MatrixJacoby = buildJacobianMatrix();//построил матрицу Якоби

@@ -1,5 +1,5 @@
-#include "Interfaces/lobbywindow.h"
-#include "ui_lobbywindow.h"
+#include "lobbywindow.h"
+#include "../ui_lobbywindow.h"
 
 
 LobbyWindow::LobbyWindow(QWidget *parent,QString login, QString pass, QString IPAddress, QMainWindow* main) :
@@ -11,7 +11,6 @@ LobbyWindow::LobbyWindow(QWidget *parent,QString login, QString pass, QString IP
     isStartClick = false;
     isReturnPressed = false;
     ui->setupUi(this);
-    winDark::setDark_Titlebar(reinterpret_cast<HWND>(winId()));
     ui->ChatMenuFrame->setMaximumWidth(0);
     ui->ListUserFrame->setMaximumWidth(0);
     socket = new QTcpSocket(this);

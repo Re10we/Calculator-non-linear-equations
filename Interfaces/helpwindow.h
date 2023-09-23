@@ -1,9 +1,8 @@
 #ifndef HELPWINDOW_H
 #define HELPWINDOW_H
 
-#include <QDialog>
-#include <QPropertyAnimation>
-#include "WinDark/winDark.h"
+#include <QtWidgets/QDialog>
+#include <QtCore/QPropertyAnimation>
 
 namespace Ui {
 class helpWindow;
@@ -11,8 +10,8 @@ class helpWindow;
 
 class helpWindow : public QDialog
 {
-    Q_OBJECT
-
+//    Q_OBJECT
+        
 public:
     explicit helpWindow(QWidget *parent = nullptr);
     ~helpWindow();

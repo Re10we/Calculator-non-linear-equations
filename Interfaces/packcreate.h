@@ -1,19 +1,18 @@
 #ifndef PACKCREATE_H
 #define PACKCREATE_H
 
-#include <QDialog>
-#include <QLineEdit>
-#include <QMessageBox>
-#include <QJsonDocument>
-#include <QJsonParseError>
-#include <QJsonObject>
-#include <QJsonArray>
-#include <QFile>
-#include <QFileDialog>
-#include <QDoubleValidator>
-#include "Methods/HFiles/Methods.h"
-#include "Methods/HFiles/MNewtona.h"
-#include "WinDark/winDark.h"
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QMessageBox>
+#include <QtCore/QJsonDocument>
+#include <QtCore/QJsonParseError>
+#include <QtCore/QJsonObject>
+#include <QtCore/QJsonArray>
+#include <QtCore/QFile>
+#include <QtWidgets/QFileDialog>
+#include <QtGui/QDoubleValidator>
+#include "../Methods/HFiles/Methods.h"
+#include "../Methods/HFiles/MNewtona.h"
 
 namespace Ui {
 class PackCreate;
@@ -21,7 +20,7 @@ class PackCreate;
 
 class PackCreate : public QDialog
 {
-    Q_OBJECT
+//   Q_OBJECT
 
 public:
     explicit PackCreate(QWidget *parent = nullptr);

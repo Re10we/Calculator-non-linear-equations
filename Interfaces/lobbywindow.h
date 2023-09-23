@@ -1,20 +1,19 @@
 #ifndef LOBBYWINDOW_H
 #define LOBBYWINDOW_H
 
-#include <QDialog>
-#include "Server/server.h"
-#include "WinDark/winDark.h"
-#include <QPropertyAnimation>
-#include <QJsonObject>
-#include <QJsonParseError>
-#include <QJsonArray>
-#include <QFile>
-#include <QMainWindow>
-#include <QMessageBox>
-#include <QFileDialog>
-#include <QGridLayout>
-#include <QFormLayout>
-#include <QWidget>
+#include <QtWidgets/QDialog>
+#include "../Server/server.h"
+#include <QtCore/QPropertyAnimation>
+#include <QtCore/QJsonObject>
+#include <QtCore/QJsonParseError>
+#include <QtCore/QJsonArray>
+#include <QtCore/QFile>
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMessageBox>
+#include <QtWidgets/QFileDialog>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QFormLayout>
+#include <QtWidgets/QWidget>
 namespace Ui {
 class LobbyWindow;
 }
